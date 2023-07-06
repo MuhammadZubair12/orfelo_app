@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include orfelo_app *.css
+recursive-include orfelo_app *.csv
+recursive-include orfelo_app *.html
+recursive-include orfelo_app *.ico
+recursive-include orfelo_app *.js
+recursive-include orfelo_app *.json
+recursive-include orfelo_app *.md
+recursive-include orfelo_app *.png
+recursive-include orfelo_app *.py
+recursive-include orfelo_app *.svg
+recursive-include orfelo_app *.txt
+recursive-exclude orfelo_app *.pyc

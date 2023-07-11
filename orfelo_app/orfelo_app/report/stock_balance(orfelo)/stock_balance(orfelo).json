@@ -1,0 +1,31 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2023-07-11 05:32:32.975322",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Modern Palace",
+ "modified": "2023-07-11 05:32:48.393703",
+ "modified_by": "Administrator",
+ "module": "Orfelo App",
+ "name": "Stock Balance(orfelo)",
+ "owner": "Administrator",
+ "prepared_report": 1,
+ "query": "",
+ "ref_doctype": "Stock Ledger Entry",
+ "report_name": "Stock Balance(orfelo)",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Stock User"
+  },
+  {
+   "role": "Accounts Manager"
+  }
+ ]
+}

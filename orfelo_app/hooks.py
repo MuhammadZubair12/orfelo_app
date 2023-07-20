@@ -13,6 +13,7 @@ app_license = "Orfelo"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/orfelo_app/css/orfelo_app.css"
 # app_include_js = "/assets/orfelo_app/js/orfelo_app.js"
+# app_include_js = "/assets/orfelo_app/js/controllers/transaction.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/orfelo_app/css/orfelo_app.css"

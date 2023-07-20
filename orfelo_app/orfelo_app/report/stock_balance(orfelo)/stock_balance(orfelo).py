@@ -80,7 +80,7 @@ def execute(filters: Optional[StockBalanceFilter] = None):
 			if item + warehouse in item_reorder_detail_map:
 				item_reorder_level = item_reorder_detail_map[item + warehouse]["warehouse_reorder_level"]
 				item_reorder_qty = item_reorder_detail_map[item + warehouse]["warehouse_reorder_qty"]
-			dop = frappe.db.sql(""" select uom,conversion_factor from `tabUOM Conversion Detail` where parent=%s ORDER BY name asc""",(item))
+			dop = frappe.db.sql(""" select uom,conversion_factor from `tabUOM Conversion Detail` where parent=%s ORDER BY name desc""",(item))
 			if dop:
 				stock_uom_conversion = dop[0][0]
 			report_data = {

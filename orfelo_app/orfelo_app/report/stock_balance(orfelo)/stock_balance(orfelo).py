@@ -387,7 +387,7 @@ def get_item_warehouse_map(filters: StockBalanceFilter, sle: List[SLEntry]):
 		qty_dict = iwb_map[group_by_key]
 		for field in inventory_dimensions:
 			qty_dict[field] = d.get(field)
-		dop = frappe.db.sql(""" select uom,conversion_factor from `tabUOM Conversion Detail` where parent=%s ORDER BY name asc""",(d.item_code))
+		dop = frappe.db.sql(""" select uom,conversion_factor from `tabUOM Conversion Detail` where parent=%s ORDER BY name desc""",(d.item_code))
 		if d.voucher_type == "Stock Reconciliation" and not d.batch_no:
 			qty_diff = flt(d.qty_after_transaction) - flt(qty_dict.bal_qty)
 		else:
